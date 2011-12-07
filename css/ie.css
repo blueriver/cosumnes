@@ -1,0 +1,128 @@
+/*  This file is part of Sava CMS (www.gosava.com).
+
+    Sava CMS is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, Version 2 of the License.
+
+    Sava CMS is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Sava CMS.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+/* @group IE6 Fixes
+===================================== */
+
+* html legend { /* Fixes incorrect styling of legend in IE6. */
+	margin: -18px -8px 16px 0;
+	padding: 0;
+	}
+
+* html .content,
+* html .sidebar {
+	height: 100px; /* equivalent to min-height */
+	display: inline; /* double-margin fix */
+	}
+
+* html .req label,
+* html p.required {
+	background-image: url(../images/icon_star.gif);
+	}
+	
+* html #navPrimary ul {
+	top: 34px;
+	}
+	
+* html #navPrimary li {
+	position: relative;
+	}
+
+* html #navPrimary li a {
+	display: inline-block;
+	}
+
+* html #navPrimary li:hover ul,
+* html #navPrimary li li:hover ul,
+* html #navPrimary li li li:hover ul,
+* html #navPrimary li.sfhover ul,
+* html #navPrimary li li.sfhover ul,
+* html #navPrimary li li li.sfhover ul {
+	left: 0;
+	}
+	
+* html #navPrimary a { overflow: hidden; }
+
+* html div.svSlideshow ol.svPager li a {
+	width: 34px !important;
+	}
+	
+* html #sysNewEvents dl.hasImage {
+	height: 40px;
+	}
+
+* html .rating {
+	background-position: 35px 50%;
+	line-height: 16px;
+}
+
+/* @end IE6 Fixes
+-------------------------------- */
+
+
+
+/* @group IE6/7 Fixes
+===================================== */
+
+#header {
+  z-index: 100000;
+  }
+
+div.svSlideshow dl { /* Necessary for IE8 and below. */
+	display: inline-block;
+	height: 235px !important;
+	overflow: visible !important;
+	background: transparent !important;
+	}
+	
+form legend {
+	margin-left: -8px !important;
+	}
+
+hr { margin: -8px auto 11px; } /* IE 6/7 has problems with setting proper <hr> margins. */
+
+/* Fixes wrong line-height on sup/sub in IE 6/7. */
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+/* @end IE6/7 Fixes
+-------------------------------- */
+
+
+
+/* @group IE7 Fixes
+===================================== */
+
+html>body p code { *white-space: normal; } /* Fixes IE7 missing wrapping of code elements. */
+
+
+/* @group IE7 - Dropdown Nav
+===================================== */
+ /* IE7 Only - Fixes enlarged text on subnav which makes everything set in ems display incorrectly */
+ 
+*+html #navPrimary li li { font-size: 1em; }
+
+*+html #navPrimary li:hover,
+*+html #navPrimary li.hover { position: static; }
+
+/* @end IE7 - Dropdown Nav
+-------------------------------- */
+
+/* @end IE7 Fixes
+-------------------------------- */
+
+
+/* EOF */
